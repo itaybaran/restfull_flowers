@@ -5,7 +5,7 @@ from pyparsing import unicode
 from code_files.service_helper import ServiceHelper
 
 app = Flask(__name__)
-helper = ServiceHelper("code_files\\app.json")
+helper = ServiceHelper("app.json")
 app.config['JSON_AS_ASCII'] = False
 
 
