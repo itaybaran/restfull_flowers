@@ -1,0 +1,15 @@
+{
+  "state_file": "code_files\\state.json",
+  "confiuration_file_path": "C:\\Users\\itayo\\PycharmProjects\\restfull\\state.json",
+  "output_dir": "C:\\Users\\itayo\\PycharmProjects\\otonomo_ex\\",
+  "special_fields":{
+    "vehicle_id": "vehicle_id",
+    "event_time": "time"
+    },
+  "logger":{
+    "log_dir_path": "logs",
+    "log_name": "DEMO_SERVICE",
+    "log_level": "INFO",
+    "log_level_spark": "ERROR"
+   }
+}
