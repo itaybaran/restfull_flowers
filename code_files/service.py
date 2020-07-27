@@ -27,6 +27,9 @@ def get_flower(flower_id):
             return jsonify({'flower':flower})
     abort(404)
 
+@app.route('/flowers/echo/<string:message>', methods=['GET'])
+def echo_message(message):
+    print(message)
 
 @app.route('/flowers/<int:flower_id>', methods=['DELETE'])
 def delete_flower(flower_id):
