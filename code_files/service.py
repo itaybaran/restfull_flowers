@@ -31,6 +31,10 @@ def get_flower(flower_id):
 def echo_message(message):
     print(message)
 
+@app.route('/flowers/echo/one/<string:message>', methods=['GET'])
+def echo_message1(message):
+    print('{} 1'.format(message))
+
 @app.route('/flowers/<int:flower_id>', methods=['DELETE'])
 def delete_flower(flower_id):
     flowers = helper.get()
