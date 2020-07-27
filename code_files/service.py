@@ -29,11 +29,11 @@ def get_flower(flower_id):
 
 @app.route('/flowers/echo/<string:message>', methods=['GET'])
 def echo_message(message):
-    print(message)
+    return jsonify({'message':message})
 
 @app.route('/flowers/echo/one/<string:message>', methods=['GET'])
 def echo_message1(message):
-    print('{} 1'.format(message))
+    return jsonify({'message':'{} 1'.format(message)})
 
 @app.route('/flowers/<int:flower_id>', methods=['DELETE'])
 def delete_flower(flower_id):
